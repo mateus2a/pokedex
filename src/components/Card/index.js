@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Card } from '../card/card.component';
 
-class Card extends Component {
-  render() {
-    return <h1>Card</h1>;
-  }
-}
-
-export default Card;
+export const CardList = (props) => (
+  <div className="card-list">
+    {props.pokemons.map((pokemon) => (
+      <Card key={pokemon.name} pokemon={pokemon}></Card>
+    ))}
+  </div>
+);
