@@ -1,9 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
+import './style.css';
+export const Card = (props) => (
+  
+<div>
+<img alt="pokemon"src={`https://img.pokemondb.net/artwork/large/${props.pokemon.name}.jpg`}/>
+<h2>{props.pokemon.name[0].toUpperCase() + props.pokemon.name.slice(1)}</h2>
+<h2>{props.pokemon.type[0]}</h2>
+</div>
 
-class Card extends Component {
-  render() {
-    return <h1>Card</h1>;
-  }
-}
-
-export default Card;
+);
