@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-
-import { CardList } from './components/card-list/card-list.component';
-import { SearchBox } from './components/search-box/search-box.component';
+import { CardList } from './components/CardList';
+import { SearchBox } from './components/SearchBox';
 
 class App extends Component {
   constructor() {
@@ -42,10 +41,7 @@ class App extends Component {
           </a>
         </h4>
         <h1>Pokemon Database</h1>
-        <SearchBox
-          placeholder="Search Pokemon"
-          handleChange={this.handleChange}
-        />
+        <SearchBox />
         <CardList pokemons={fileteredPokemons}></CardList>
       </div>
     );
