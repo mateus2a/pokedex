@@ -41,10 +41,7 @@ class App extends Component {
           </a>
         </h4>
         <h1>Pokemon Database</h1>
-        <SearchBox
-          placeholder="Search Pokemon"
-          handleChange={this.handleChange}
-        />
+        <SearchBox />
         <CardList pokemons={fileteredPokemons}></CardList>
       </div>
     );
