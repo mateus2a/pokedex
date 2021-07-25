@@ -30,16 +30,6 @@ class App extends Component {
 
     return (
       <div className="App">
-        <h4>
-          <a
-            href="https://www.linkedin.com/in/surojit-manna"
-            target="_blank"
-            noreferrer
-            rel="noreferrer"
-          >
-            Author
-          </a>
-        </h4>
         <h1>Pokemon Database</h1>
         <SearchBox />
         <CardList pokemons={fileteredPokemons}></CardList>
