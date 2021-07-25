@@ -31,7 +31,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Pokemon Database</h1>
-        <SearchBox />
+        <SearchBox handleChange={this.handleChange}/>
         <CardList pokemons={fileteredPokemons}></CardList>
       </div>
     );

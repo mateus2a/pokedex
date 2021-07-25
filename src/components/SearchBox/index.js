@@ -1,3 +1,5 @@
 import React from 'react';
 
-export const SearchBox = () => <h2>Input</h2>;
+export const SearchBox = ({handleChange}) => (
+       <input type="text" placeholder="Busque um pokémon..." onChange={handleChange}/>
+);
